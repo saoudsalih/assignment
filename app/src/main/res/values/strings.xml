@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">innoventes</string>
+    <string name="enter_birthdate_dd_mm_yyyy">Enter Birthdate (dd/MM/yyyy)</string>
+    <string name="enter_pan_number">Enter PAN Number</string>
+    <string name="next">Next</string>
+    <string name="first_of_the_few_steps_to_set_you_up_with_a_bank_account">First of the few steps to set you up with a Bank Account</string>
+    <string name="s">S.</string>
+    <string name="pan_number">PAN NUMBER</string>
+    <string name="birthdate">BIRTHDATE</string>
+    <string name="day">dd</string>
+    <string name="month">MM</string>
+    <string name="year">yyyy</string>
+    <string name="i_dont_have_a_pan">I dont have a PAN</string>
+    <string name="link"><a href="https://www.google.pl/">Google</a></string>
+    <string name="lostpassword">If you lost your password please contact <a href="mailto:support@cleverfinger.com.au?Subject=Lost%20Password" target="_top">support@cleverfinger.com.au</a></string>
+    <string name="providing_pan_amp_date_of_birth_helps_us_find_and_fetch_your_kyc_from_a_central_registry_by_the_goverment_of_india_learn_more">Providing PAN &amp; Date of Birth helps us find and fetch your KYC from a Central registry by the Government of India.<a href="https://google.com" target="_top"> <u><b><font color="#663fb6"> Learn more</font></b></u></a></string>
+</resources>

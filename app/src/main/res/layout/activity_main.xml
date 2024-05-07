@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:textSize="32sp"
+        android:textColor="#fc5746"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="@string/s" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/first_of_the_few_steps_to_set_you_up_with_a_bank_account"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/InnovatesTextViewStyle"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="66dp"
+        android:text="@string/pan_number" />
+
+    <EditText
+        android:id="@+id/panEditText"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textView"
+        style="@style/InnovatesEditTextStyle"
+        android:padding="12dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/enter_pan_number"
+        android:importantForAutofill="no"
+        android:inputType="textCapCharacters" />
+
+    <TextView
+        android:id="@+id/textView_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panEditText"
+        android:layout_alignStart="@+id/panEditText"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        style="@style/InnovatesTextViewStyle"
+        android:text="@string/birthdate" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_birth"
+        android:layout_alignStart="@+id/panEditText"
+        android:layout_alignEnd="@+id/panEditText"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+
+        <!-- Day -->
+        <EditText
+            android:id="@+id/editTextDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            style="@style/InnovatesEditTextStyle"
+            android:gravity="center"
+            android:hint="@string/day"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="12dp"
+            android:importantForAutofill="no" />
+
+        <!-- Month -->
+        <EditText
+            android:id="@+id/editTextMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            style="@style/InnovatesEditTextStyle"
+            android:gravity="center"
+            android:hint="@string/month"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="12dp"
+            tools:ignore="Autofill" />
+
+        <!-- Year -->
+        <EditText
+            android:id="@+id/editTextYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            style="@style/InnovatesEditTextStyle"
+            android:gravity="center"
+            android:hint="@string/year"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="12dp"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextButton"
+        android:layout_alignStart="@+id/nextButton"
+        android:layout_alignEnd="@+id/nextButton"
+        android:id="@+id/text_privacy"
+        android:autoLink="all"
+        android:layout_marginBottom="10dp"
+        android:text="@string/providing_pan_amp_date_of_birth_helps_us_find_and_fetch_your_kyc_from_a_central_registry_by_the_goverment_of_india_learn_more" />
+
+    <Button
+        android:id="@+id/nextButton"
+        style="@style/InnovatesButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/no_pan_button"
+        android:layout_alignStart="@+id/no_pan_button"
+        android:layout_alignEnd="@+id/no_pan_button"
+        android:layout_marginBottom="10dp"
+        android:text="@string/next"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/no_pan_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/i_dont_have_a_pan"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
